@@ -66,7 +66,7 @@ A robust desktop application for translating text, generating speech, and conver
 
 ## **Screenshots**
 ### **Main Interface**
-![Main Interface](C:\Users\Asritha\OneDrive\Pictures\Saved Pictures)
+![Main Interface](https://github.com/Asritha-sri-krishna/Multilingual-Translator/blob/main/Language.png?raw=true)
 
 ---
 

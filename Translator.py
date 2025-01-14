@@ -1,20 +1,8 @@
 import tkinter as tk
 from tkinter import ttk, messagebox, filedialog
-from googletrans import Translator, LANGUAGES
+from googletrans import Translator,LANGUAGES
 import pyttsx3
 from PIL import Image, ImageTk
-# Create Tkinter Window
-root = tk.Tk()
-root.title('Language Translator')
-root.geometry('800x500')
-root.minsize(800, 500)
-
-# Configure rows and columns for resizing
-root.grid_rowconfigure(1, weight=1)
-root.grid_rowconfigure(2, weight=1)
-root.grid_columnconfigure(0, weight=1)
-root.grid_columnconfigure(1, weight=1)
-
 # Initialize Translator and Text-to-Speech Engine
 translator = Translator()
 engine = pyttsx3.init()
@@ -26,7 +14,7 @@ language_codes = {name.capitalize(): code for code, name in LANGUAGES.items()}
 
 
 root = tk.Tk()
-root.title('Language Translator')
+root.title('Multilingual Translator')
 root.geometry('800x500')
 root.minsize(800, 500)
 
@@ -44,9 +32,9 @@ def translate():
     cl = language_codes.get(choose_language.get(), None)
 
     if not language_1:
-        messagebox.showerror('Language Translator', 'Please fill the input box')
+        messagebox.showerror('Multilingual Translator', 'Please fill the input box')
     elif not cl:
-        messagebox.showerror('Language Translator', 'Please select a valid language')
+        messagebox.showerror('Multilingual Translator', 'Please select a valid language')
     else:
         t2.delete(1.0, 'end')
         try:
